@@ -91,14 +91,14 @@
 				<table>
 					<thead>
 						<tr>
-							<th>Destination</th>
-							<th>Transport</th>
-							<th>Departure Location</th>
-							<th>Price</th>
-							<th>Date</th>
-							<th>Departure Time</th>
-							<th>Airline</th>
-							<th>Price Summary</th>
+							<th>Saabumsiskoht</th>
+<th>Transport</th>
+<th>Lähtekoht</th>
+<th>Hind</th>
+<th>Kuupäev</th>
+<th>Väljumisaeg</th>
+<th>Lennufirma</th>
+<th>Kokku Hind</th>
 						</tr>
 					</thead>
 					<tbody>
