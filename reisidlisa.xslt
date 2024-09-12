@@ -88,6 +88,7 @@
 						</li>
 					</ul>
 				</xsl:for-each>
+8.Kuva kõik xml andmed tabelina, kus read on üle rea erineva värviga.
 				<table>
 					<thead>
 						<tr>
