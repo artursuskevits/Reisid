@@ -8,6 +8,23 @@ create table reis (
 	väljumisaeg VARCHAR(50),
 	lennufirma VARCHAR(50)
 );
+Create database reisid;
+
+use reisid;
+
+select *from reis;
+SELECT 
+    transport AS '@transport',  
+	transport as 'details/transport',
+    lahtekoht AS 'details/lahtekoht',  
+    saabumsiskoht AS 'details/saabumsiskoht',
+    hind AS 'details/hind',
+    kuupaev AS 'details/kuupaev',
+    väljumisaeg AS 'details/väljumisaeg',
+    lennufirma AS 'details/lennufirma'
+FROM reis
+FOR XML PATH('reis'), ROOT('reisid');
+
 insert into reis (reis_id, transport, lahtekoht, saabumsiskoht, hind, kuupaev, väljumisaeg, lennufirma) values (1, 'WUAGNAFG7BN612344', 'Langtad', 'Huangtang', '€357,44', '12/15/2023', '1:04 PM', 'MICTW');
 insert into reis (reis_id, transport, lahtekoht, saabumsiskoht, hind, kuupaev, väljumisaeg, lennufirma) values (2, '1GKS1EEF0BR411210', 'Ovidiopol’', 'Toledo', '€212,46', '12/23/2023', '9:12 PM', 'ONB');
 insert into reis (reis_id, transport, lahtekoht, saabumsiskoht, hind, kuupaev, väljumisaeg, lennufirma) values (3, 'JH4KB16627C302210', 'San Rafael Abajo', 'Jagiełła', '€68,16', '10/18/2023', '7:00 PM', 'KTOVW');
